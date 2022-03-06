@@ -25,9 +25,3 @@ jobs:
     - run: npm run build --if-present
     #- run: npm test
 
-    © 2022 GitHub, Inc.
-
-    Terms
-    Privacy
-    Security
-    Status
