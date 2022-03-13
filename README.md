@@ -1,8 +1,6 @@
 # Getting Started with Create React App
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/9b502879-811d-4984-8622-042f55a6102e/deploy-status)
-
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+![Netlify Status](https://api.netlify.com/api/v1/badges/9b502879-811d-4984-8622-042f55a6102e/deploy-status) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 
 
