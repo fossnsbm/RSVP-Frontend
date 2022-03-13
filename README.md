@@ -2,6 +2,9 @@
 
 ![Netlify Status](https://api.netlify.com/api/v1/badges/9b502879-811d-4984-8622-042f55a6102e/deploy-status)
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
