@@ -1,4 +1,3 @@
-import React from "react";
 import { useHelloQuery } from "./generated/graphql";
 
 import LoadingButton from "@mui/lab/LoadingButton";
