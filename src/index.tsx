@@ -1,9 +1,9 @@
 import ReactDOM from "react-dom";
-import App from "./App";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ApolloProvider } from "@apollo/react-hooks";
 import Login from "./components/login/login";
+import HomePage from "./components/home/home";
 import { ChakraProvider } from "@chakra-ui/react";
 import "./index.css";
 
@@ -19,7 +19,7 @@ ReactDOM.render(
     <ChakraProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="login" element={<Login />} />
         </Routes>
       </BrowserRouter>
