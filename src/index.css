@@ -3,3 +3,29 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+
+.thanuHeaderBlack {
+  color: #484848
+}
+
+.thanuBlue {
+  color: #6699FF
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .headerImage {
+    max-width: 2200%;
+
+  }
+}
+
+.navBarPaddingLeft {
+  padding-left: 5%;
+}
+
+.navBarPaddingRight{
+  padding-right: 5%;
+}

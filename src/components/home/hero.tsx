@@ -12,6 +12,7 @@ import {
   IconProps,
 } from "@chakra-ui/react";
 
+
 export default function HeroPage() {
   return (
     <Container maxW={"7xl"}>
@@ -22,9 +23,9 @@ export default function HeroPage() {
         direction={{ base: "column", md: "row" }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Heading mb={1} fontSize="5xl" fontStyle={"Poppins"}>
+          <Heading mb={1} fontSize="5xl" fontStyle={"Poppins"} className="thanuHeaderBlack">
             A truly{" "}
-            <Link color="blue.300" href="/">
+            <Link color="blue.300" href="/" className="thanuBlue">
               {" "}
               Open Source{" "}
             </Link>
@@ -42,10 +43,10 @@ export default function HeroPage() {
               fontWeight={"normal"}
               px={6}
               colorScheme={"twitter"}
-              borderRadius="3px"
+              borderRadius="4px"
               border="1px"
             >
-              Get started
+              Explore
             </Button>
                      </Stack>
         </Stack>
