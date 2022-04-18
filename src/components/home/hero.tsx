@@ -71,7 +71,7 @@ export default function HeroPage() {
               w={"100%"}
               h={"100%"}
               src={
-                "https://fossnsbm.org/content/images/size/w2000/2020/05/xheaderp.png.pagespeed.ic.FEqs3_u2yN.webp"
+                "https://www.nsbm.ac.lk/wp-content/uploads/2019/09/01-7.jpg"
               }
             />
           </Box>

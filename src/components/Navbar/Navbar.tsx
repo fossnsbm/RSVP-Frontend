@@ -41,7 +41,7 @@ export default function Nav() {
 
   return (
     <>
-      <Box px={4} className="navBar" mt={5} bg={'#F6F4FC'}>
+      <Box px={4} className="navBar" mt={5}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
