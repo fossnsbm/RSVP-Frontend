@@ -67,7 +67,7 @@ export default function FeatureEvent() {
             </Text>
           </List>
           <Stack
-            direction={["column", "row"]}
+            direction={["row", "row"]}
             mt={6}
             color={useColorModeValue("gray.800", "white")}
           >

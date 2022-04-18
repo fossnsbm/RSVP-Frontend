@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ApolloProvider } from "@apollo/react-hooks";
 import Login from "./components/login/login";
 import HomePage from "./components/home/home";
+import Explore from "./components/explore/explore";
+
 import { ChakraProvider } from "@chakra-ui/react";
 import "./index.css";
 
@@ -20,6 +22,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/explore" element={<Explore />} />
           <Route path="login" element={<Login />} />
         </Routes>
       </BrowserRouter>
