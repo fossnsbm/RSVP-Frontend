@@ -1,4 +1,12 @@
-import { Flex, Box, Image, useColorModeValue } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  Image,
+  useColorModeValue,
+  Avatar,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 
 interface data {
   imageURL: string;
@@ -37,7 +45,10 @@ const BlogPostCard = ({ data }: { data: data }) => {
 
           <Flex justifyContent="space-between" alignContent="center">
             <Box fontSize="1xl" color={useColorModeValue("gray.700", "white")}>
-              {data.writter}
+              <Stack direction={["column", "row"]} spacing="10px">
+                <Avatar name={data.writter} size={"sm"} />
+                <Text>{data.writter} </Text>
+              </Stack>
             </Box>
           </Flex>
         </Box>

@@ -47,7 +47,7 @@ export default function HeroPage() {
                 borderRadius="4px"
                 border="1px"
               >
-                Explore
+                <Link href="/explore">Explore</Link>
               </Button>
             </Stack>
           </Stack>

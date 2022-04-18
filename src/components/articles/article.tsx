@@ -4,7 +4,7 @@ import BlogPostCard from "./card";
 const data = {
   imageURL: "https://www.nsbm.ac.lk/wp-content/uploads/2019/09/01-7.jpg",
   name: "Card Name",
-  writter: "john",
+  writter: "john Doe",
 };
 
 export default function ArticleSecion() {
