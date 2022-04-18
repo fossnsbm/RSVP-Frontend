@@ -15,6 +15,7 @@ import {
 
 export default function HeroPage() {
   return (
+    <Container maxW={"100%"} bg={'#F6F4FC'} >
     <Container maxW={"7xl"}>
       <Stack
         align={"center"}
@@ -76,6 +77,7 @@ export default function HeroPage() {
           </Box>
         </Flex>
       </Stack>
+    </Container>
     </Container>
   );
 }

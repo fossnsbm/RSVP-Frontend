@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const Links = ["Dashboard", "Projects", "Team"];
+const Links = ["Dashboard", "Projects", "Team", "Login"];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -41,7 +41,7 @@ export default function Nav() {
 
   return (
     <>
-      <Box px={4} className="navBar" mt={5}>
+      <Box px={4} className="navBar" mt={5} bg={'#F6F4FC'}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
