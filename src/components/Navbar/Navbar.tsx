@@ -67,7 +67,7 @@ export default function Nav() {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link} >{link} </NavLink>
+                <NavLink key={link}>{link} </NavLink>
               ))}
             </HStack>
           ) : null}

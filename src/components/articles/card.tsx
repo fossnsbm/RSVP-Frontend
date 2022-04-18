@@ -1,26 +1,21 @@
-import {
-  Flex,
-  Box,
-  Image,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Flex, Box, Image, useColorModeValue } from "@chakra-ui/react";
 
 interface data {
   imageURL: string;
   name: string;
-  writter: string,
-};
-
+  writter: string;
+}
 
 const BlogPostCard = ({ data }: { data: data }) => {
   return (
-    <Flex w="full"justifyContent="center">
+    <Flex w="full" justifyContent="center">
       <Box
-        bg={useColorModeValue('white', 'gray.800')}
+        bg={useColorModeValue("white", "gray.800")}
         maxW="sm"
         rounded="lg"
         shadow="lg"
-        position="relative">
+        position="relative"
+      >
         <Image
           src={data.imageURL}
           alt={`Picture of ${data.name}`}
@@ -34,13 +29,14 @@ const BlogPostCard = ({ data }: { data: data }) => {
               fontWeight="semibold"
               as="h4"
               lineHeight="tight"
-              isTruncated>
+              isTruncated
+            >
               {data.name}
             </Box>
           </Flex>
 
           <Flex justifyContent="space-between" alignContent="center">
-            <Box fontSize="1xl" color={useColorModeValue('gray.700', 'white')}>
+            <Box fontSize="1xl" color={useColorModeValue("gray.700", "white")}>
               {data.writter}
             </Box>
           </Flex>
@@ -48,6 +44,6 @@ const BlogPostCard = ({ data }: { data: data }) => {
       </Box>
     </Flex>
   );
-}
+};
 
 export default BlogPostCard;

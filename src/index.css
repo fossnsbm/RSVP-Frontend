@@ -4,21 +4,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
 .thanuHeaderBlack {
-  color: #484848
+  color: #484848;
 }
 
 .thanuBlue {
-  color: #6699FF
+  color: #6699ff;
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .headerImage {
     max-width: 2200%;
-
   }
 }
 
@@ -26,6 +22,6 @@ body {
   padding-left: 5%;
 }
 
-.navBarPaddingRight{
+.navBarPaddingRight {
   padding-right: 5%;
 }
