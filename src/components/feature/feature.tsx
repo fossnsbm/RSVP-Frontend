@@ -1,13 +1,9 @@
 
 import {
-  Button,
   Flex,
-  Heading,
-  Image,
   Stack,
-  Text,
-  useBreakpointValue,
 } from '@chakra-ui/react';
+import ArticleSecion from "../articles/article"
 
 export default function FeatureSection() {
   return (
@@ -19,11 +15,10 @@ export default function FeatureSection() {
           </Stack>
         </Stack>
       </Flex>
-      <Flex flex={1} bg={'#6699FF'}>
 
-      <h1> content from the blog </h1>
-      
+      <Flex p={8} flex={1}  bg={'#6699FF'}>
+      < ArticleSecion />
       </Flex>
-    </Stack>
+  </Stack>
   );
 }
