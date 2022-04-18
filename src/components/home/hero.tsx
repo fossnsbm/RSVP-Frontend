@@ -6,10 +6,7 @@ import {
   Heading,
   Button,
   Image,
-  Icon,
   Link,
-  createIcon,
-  IconProps,
 } from "@chakra-ui/react";
 
 
