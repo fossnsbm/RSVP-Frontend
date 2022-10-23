@@ -10,10 +10,11 @@ import {
   Heading,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { CalendarIcon, TimeIcon, PlusSquareIcon } from "@chakra-ui/icons";
+import { AiOutlineClockCircle, AiOutlineCalendar } from "react-icons/ai";
+import { IoLocationOutline } from "react-icons/io5";
 
 const data = {
-  imageURL: "https://img.devrant.com/devrant/rant/r_1237244_87WJY.jpg",
+  imageURL:"https://vacuumlabs.com/wp-content/uploads/2020/02/HC20-Hub-FB-Event-Header_2.3-1.png",// "https://img.devrant.com/devrant/rant/r_1237244_87WJY.jpg",
   date: "7th Febuary, 2022",
   time: "7.00PM Onwards ",
   location: "FOC, C2-002, NSBM Green University",
@@ -24,59 +25,62 @@ const data = {
 
 export default function FeatureEvent() {
   return (
-    <Center py={6}>
+    <Center>
       <Box
-        maxW={"500px"}
+        maxW={440}
         w={"full"}
-        boxShadow={"2xl"}
         rounded={"lg"}
         overflow={"hidden"}
       >
-        <Image src={data.imageURL} roundedTop="sm" />
+        <Image src={data.imageURL} roundedTop="lg"/>
 
-        <Box bg={useColorModeValue("gray.50", "gray.900")} px={6} py={10}>
-          <List spacing={3}>
+        <Box bg={useColorModeValue("gray.50", "gray.900")} px={6} py={5}>
+          <List spacing={2}>
             <Heading
               color={useColorModeValue("gray.700", "white")}
-              fontSize={"4xl"}
-              mb={5}
+              fontSize={"2xl"}
+              mb={3}
             >
               {data.title}
             </Heading>
 
             <ListItem color={"#6699FF"}>
-              <ListIcon as={TimeIcon} />
+              <ListIcon as={AiOutlineClockCircle} />
               {data.time}
             </ListItem>
 
             <ListItem color={"#6699FF"}>
-              <ListIcon as={CalendarIcon} />
+              <ListIcon as={AiOutlineCalendar} />
               {data.date}
             </ListItem>
 
-            <ListItem color={"#6699FF"}>
-              <ListIcon as={PlusSquareIcon} />
+            <ListItem color={"#6699FF"} >
+              <ListIcon as={IoLocationOutline} />
               {data.location}
             </ListItem>
             <Text
-              color={useColorModeValue("gray.700", "gray.400")}
-              fontSize={"lg"}
+              color='#808080'
+              fontSize={"md"}
               fontWeight={500}
+              pt={'2'}
             >
               {data.description}
             </Text>
           </List>
           <Stack
             direction={["row", "row"]}
-            mt={6}
+            mt={4}
             color={useColorModeValue("gray.800", "white")}
           >
             <Text
               fontSize={"sm"}
-              fontWeight={500}
-              bg={useColorModeValue("blue.50", "blue.900")}
-              p={2}
-              color={"blue.500"}
+              fontWeight={400}
+              bg={'#E9F2FF'}
+              pt={1}
+              height={8}
+              pl={6}
+              pr={6}
+              color={"#6699FF"}
               rounded={"full"}
             >
               Hackathon
@@ -84,10 +88,13 @@ export default function FeatureEvent() {
 
             <Text
               fontSize={"sm"}
-              fontWeight={500}
-              bg={useColorModeValue("red.50", "red.900")}
-              p={2}
-              color={"red.500"}
+              fontWeight={400}
+              bg={'#FFEBEE'}
+              pt={1}
+              height={8}
+              pl={6}
+              pr={6}
+              color={"#FF6682"}
               rounded={"full"}
             >
               Competition
