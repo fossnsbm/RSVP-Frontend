@@ -25,9 +25,10 @@ export default function HeroPage() {
               fontSize="5xl"
               fontStyle={"Poppins"}
               className="thanuHeaderBlack"
+              lineHeight='1.4'
             >
               A truly{" "}
-              <Link color="blue.300" href="/" className="thanuBlue">
+              <Link color="#6699FF" _hover={{textDecoration:'none'}} href="/" className="thanuBlue">
                 {" "}
                 Open Source{" "}
               </Link>
@@ -43,11 +44,14 @@ export default function HeroPage() {
                 size={"lg"}
                 fontWeight={"normal"}
                 px={6}
-                colorScheme={"twitter"}
+                bg= {'#6699FF'}
+                color={'white'}
+                paddingLeft={'40px'}
+                paddingRight={'40px'}
                 borderRadius="4px"
-                border="1px"
+                _hover={{ bg: '#3D7EFE'}}
               >
-                <Link href="/explore">Explore</Link>
+                <Link href="/explore" _hover={{textDecoration:'none'}}>Explore</Link>
               </Button>
             </Stack>
           </Stack>
