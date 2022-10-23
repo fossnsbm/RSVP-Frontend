@@ -21,19 +21,21 @@ const BlogPostCard = ({ data }: { data: data }) => {
         bg={useColorModeValue("white", "gray.800")}
         maxW="sm"
         rounded="lg"
-        shadow="lg"
         position="relative"
       >
         <Image
           src={data.imageURL}
           alt={`Picture of ${data.name}`}
           roundedTop="lg"
+          height="140px"
+          width="280px"
+          objectFit='cover'
         />
 
-        <Box p="6">
-          <Flex mt="1" justifyContent="space-between" alignContent="center">
+        <Box paddingLeft='15px' paddingRight='15px' paddingTop='8px' paddingBottom='14px'>
+          <Flex justifyContent="space-between" alignContent="center">
             <Box
-              fontSize="2xl"
+              fontSize="lg"
               fontWeight="semibold"
               as="h4"
               lineHeight="tight"
@@ -42,12 +44,11 @@ const BlogPostCard = ({ data }: { data: data }) => {
               {data.name}
             </Box>
           </Flex>
-
           <Flex justifyContent="space-between" alignContent="center">
-            <Box fontSize="1xl" color={useColorModeValue("gray.700", "white")}>
-              <Stack direction={["column", "row"]} spacing="10px">
-                <Avatar name={data.writter} size={"sm"} />
-                <Text>{data.writter} </Text>
+            <Box fontSize="1xl" color={useColorModeValue("gray.700", "white")} paddingTop='5px'>
+              <Stack direction={["column", "row"]} spacing="8px" align="center">
+                <Avatar name={data.writter} size={"xs"} />
+                <Text color={'#9B9B9B'} fontWeight='medium' textTransform={'capitalize'}>{data.writter} </Text>
               </Stack>
             </Box>
           </Flex>
