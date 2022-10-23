@@ -27,12 +27,12 @@ const BlogPostCard = ({ data }: { data: data }) => {
           src={data.imageURL}
           alt={`Picture of ${data.name}`}
           roundedTop="lg"
-          height="140px"
-          width="280px"
+          height="160px"
+          width="300px"
           objectFit='cover'
         />
 
-        <Box paddingLeft='15px' paddingRight='15px' paddingTop='8px' paddingBottom='14px'>
+        <Box pl='15px' pr='15px' pt='8px' pb='14px'>
           <Flex justifyContent="space-between" alignContent="center">
             <Box
               fontSize="lg"
