@@ -9,6 +9,7 @@ export default function TwitterSection() {
                 </Stack>
                 <Stack spacing={0}>
                     <iframe
+                        title="rsvp-twitter-wall"
                         id="wallsio-iframe"
                         src="https://my.walls.io/c6nrg?nobackground=1&amp;show_header=0"
                         style={{ border: 0, height: "600px", width: "100%" }}
