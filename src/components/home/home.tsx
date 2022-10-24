@@ -1,6 +1,7 @@
 import HeroPage from "./hero";
 import Nav from "../Navbar/Navbar";
 import FeatureSection from "../feature/feature";
+import TwitterSection from "../twitter/twitterSection";
 
 function HomePage() {
   return (
@@ -8,6 +9,7 @@ function HomePage() {
       <Nav></Nav>
       <HeroPage />
       <FeatureSection />
+      <TwitterSection />
     </>
   );
 }
