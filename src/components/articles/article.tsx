@@ -9,9 +9,9 @@ const data = {
 
 export default function ArticleSecion() {
   return (
-    <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+    <Container maxW={"2xl"} py={16} as={Stack} spacing={8}>
       <Stack spacing={0}>
-        <Heading color={"white"}>Recent Articles</Heading>
+        <Heading color={"white"} paddingLeft='2'>Recent Articles</Heading>
       </Stack>
 
       <Stack

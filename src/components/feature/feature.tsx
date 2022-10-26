@@ -5,9 +5,9 @@ import FeatureEvent from "./card";
 export default function FeatureSection() {
   return (
     <Stack minH={"10vh"} direction={{ base: "column", md: "row" }}>
-      <Flex p={8} flex={1}>
-        <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
-          <Stack spacing={0} align={"center"} justify={"center"}>
+      <Flex p={8} flex={6}>
+        <Container maxW={480} py={16} as={Stack} spacing={8} >
+          <Stack spacing={0} align={"left"} justify={"center"} >
             <Heading color={"#6699FF"}>Featured Event</Heading>
           </Stack>
 
@@ -20,7 +20,7 @@ export default function FeatureSection() {
         </Container>
       </Flex>
 
-      <Flex p={8} flex={1} bg={"#6699FF"}>
+      <Flex p={8} flex={8} bg={"#6699FF"}>
         <ArticleSecion />
       </Flex>
     </Stack>
