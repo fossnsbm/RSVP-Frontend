@@ -1,1 +1,2 @@
-import { Button, TextField } from '@mui/material';
+import { Grid, Typography } from "@mui/material";
+import "../styles/FooterSection.scss";
