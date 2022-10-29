@@ -55,7 +55,6 @@ export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
       <Box px={4} className="navBar" mt={5}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -126,6 +125,5 @@ export default function Nav() {
           </Box>
         ) : null}
       </Box>
-    </>
   );
 }
