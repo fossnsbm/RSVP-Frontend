@@ -1,11 +1,15 @@
 import {
   Button,
+  ButtonGroup,
   Container,
   Divider,
+  IconButton,
   Stack,
   Text,
   Heading,
 } from '@chakra-ui/react'
+
+import { FaFacebook, FaYoutube, FaTwitter, FaInstagram} from 'react-icons/fa'
 
 
 export default function FooterSection() {
@@ -43,9 +47,26 @@ export default function FooterSection() {
               <Button variant="link">Blog</Button>
               <Button variant="link">Forum</Button>
             </Stack>
+            <Divider />
+            <Stack spacing="4" direction={{ base: 'column', sm: 'row' }}>
+              <ButtonGroup variant="ghost">
+                <Text>Follow us on</Text>
+                <IconButton
+                  as="a"
+                  target="_blank"
+                  href="https://www.facebook.com/foss.nsbm/"
+                  aria-label="Facebook"
+                  icon={<FaFacebook fontSize="1.25rem" />}
+                />
+                <IconButton as="a" target="_blank" href="https://www.instagram.com/fossnsbm/" aria-label="Instagram" icon={<FaInstagram fontSize="1.25rem" />} />
+                <IconButton as="a" target="_blank" href="https://twitter.com/fossnsbm" aria-label="Twitter" icon={<FaTwitter fontSize="1.25rem" />} />
+                <IconButton as="a" target="_blank" href="https://www.youtube.com/channel/UC_bx6hMjxj3hqqQhBw2LCLA/featured" aria-label="Youtube" icon={<FaYoutube fontSize="1.25rem" />} />
+              </ButtonGroup>
+            </Stack>
           </Stack>
         </Stack>
       </Stack>
+      <Divider />
     </Container>
   );
 }
