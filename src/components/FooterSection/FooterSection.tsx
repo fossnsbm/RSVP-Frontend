@@ -9,7 +9,7 @@ import {
   Heading,
 } from '@chakra-ui/react'
 
-import { FaFacebook, FaYoutube, FaTwitter, FaInstagram} from 'react-icons/fa'
+import { FaFacebook, FaYoutube, FaTwitter, FaInstagram, FaHeart } from 'react-icons/fa'
 
 
 export default function FooterSection() {
@@ -67,6 +67,21 @@ export default function FooterSection() {
         </Stack>
       </Stack>
       <Divider />
+      <Stack
+        pt="1"
+        pb="1"
+        justify="space-between"
+        direction={{ base: 'column-reverse', md: 'row' }}
+        align="center"
+      >
+
+          <Text display='inline'>
+            &copy; {new Date().getFullYear()} FOSS Community of NSBM
+          </Text>
+          <Text display='inline'>
+            &lt;/&gt; with<FaHeart size={22} display='inline'/> by the FOSS Community of NSBM
+          </Text>
+      </Stack>
     </Container>
   );
 }
